@@ -5,69 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title lang="en">Test-project</title>
+    <link rel="stylesheet" href="./css/mail.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <ul class="header__list">
-                <li class="header__list__item">You are not protected</li>
-                <li class="header__list__item">Your IP Address: 107.3.176.194</li>
-                <li class="header__list__item">Your ISP: Comcast Cable</li>
-                <li class="header__list__item">Learn More ›</li>
+                <li class="header__list__item">
+                    <svg class="header__list__icon" width="24px" height="24px">
+                        <use href="./images/sprite.svg#icon-icon-red-alert"></use>
+                    </svg>
+                    <li class="header__list__item">
+                        <p class="header__list__item__text text-red">You are not protected</p>
+                    </li>
+                </li>
+                <li class="header__list__item">
+                    <p class="header__list__item__text text-gray">Your IP Address: 107.3.176.194</p>
+                </li>
+                <li class="header__list__item">
+                    <p class="header__list__item__text text-gray">Your ISP: Comcast Cable</p>
+                </li>
+                <li class="header__list__item">
+                    <a class="header__list__item__link" href="#">Learn More &#62;</a>
+                </li>
+                    
+                    <div class="header-container__close">
+                        <button type="button" class="header__close">
+                            <svg class="header__list__icon" width="14px" height="14px">
+                                <use href="./images/sprite.svg#icon-icon-dark-close"></use>
+                            </svg>
+        
+                        </button>
+                </div>
             </ul>
         </div>
-        <nav>
-            <div class="logotype">
-                <svg width="1px" height="1px">
-                    <use href="#"></use>
-                </svg>
-            </div>
-            <ul>
-                <li>
-                    <a href="#">WHY US</a>
-                </li>
-                <li>
-                    <a href="#">VPN APPS</a>
-                </li>
-                <li>
-                    <a href="#">SUPPORT</a>
-                </li>
-                <li>
-                    <a href="#">SUPPORT</a>
-                </li>
-            </ul>
-            <button type="button">LOG IN</button>
-            <button type="button">GET STARTED</button>
-        </nav>
     </header>
     <main>
+        <!--Nav-->
+        <nav class="nav">
+            <div class="container"> 
+                    <img class="logotype" src="./images/logo-pia-black-no-tagline.jpg" alt="Logotype">
+                <ul class="nav-list">
+                <li class="nav-list__item">
+                    <a class="nav-list__item__link" href="#">Why us
+                        <svg class="nav-svg" width="10px" height="5px">
+                            <use href="./images/sprite.svg#icon--copy-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-list__item__link" href="#">Vpn apps</a>
+                </li>
+                <li>
+                    <a class="nav-list__item__link" href="#">Support
+                        <svg class="nav-svg" width="10px" height="5px">
+                            <use href="./images/sprite.svg#icon--copy-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-list__item__link nav-active-link" href="#">Resources
+                        <svg class="nav-svg" width="10px" height="5px">
+                            <use href="./images/sprite.svg#icon--copy-2"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-list__btn">
+                <li class="nav-list__btn__item">
+                    <button class="nav-btn1" type="button">Log in</button>
+                </li>
+                <li class="nav-list__btn__item">
+                    <button class="nav-btn2" type="button">Get started</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
         <!--Feature-->
         <section class="feature">
             <div class="container">
                 <h1 hidden>Description of the site</h1>
-                <!-- <img src="" alt="">
-                <p>TV Addons: Legal battle against Canadian media giants demonstrates severe consequences facing developers accused of copyright infringement</p>
-                <div class="">
-                    <ul>
-                        <li><p></p></li>
-                        <li><p></p></li>
-                        <li><svg><use></use></svg><p></p></li>
+                 <div class="feature-container__img">
+                     <img src="./images/featured article/featured-article.jpg" alt="
+                     Remote control and description">
+                 </div>
+                
+                <div class="feature-container__tags">
+                    <ul class="feature__list">
+                        <li class="feature__list__item"><span class="item-black">Tags</span></li>
+                        <li class="feature__list__item">bitcoin</li>
+                        <li class="feature__list__item">bittorrent</li>
+                        <li class="feature__list__item">irc</li>
+                        <li class="feature__list__item">news</li>
+                        <li class="feature__list__item">privacy</li>
+                        <li class="feature__list__item">programming</li>
+                        <li class="feature__list__item">security</li>
                     </ul>
-                </div> -->
-                <div class="tags-container">
-                    <p>Tags:</p>
-                    <ul>
-                        <li>bitcoin</li>
-                        <li>bittorrent</li>
-                        <li>irc</li>
-                        <li>news</li>
-                        <li>privacy</li>
-                        <li>programming</li>
-                        <li>security</li>
-                    </ul>
-                    <ul>
-                        <li>team</li>
-                        <li>contact</li>
+                    <ul class="feature__list-nav">
+                        <li class="feature__list-nav__item item-black">team</li>
+                        <li class="feature__list-nav__item item-black">contact</li>
                     </ul>
                 </div>
             </div>
@@ -166,7 +202,8 @@
             </div>
         </section>
         <!--Side nav blog-->
-        <section class="nav-blog">
+        <!-- <section class="nav-blog"> -->
+            <aside class="aside-blog">
             <div class="container">
                 <h3 hidden class="nav-blog__tittle">Side navigation</h3>
                 <form action="#">
@@ -213,11 +250,12 @@
                 <p class="nav-blog__subtitle">Tag cloud</p>
                 <img src="./images/nav-side/screen-hot-nav-side.jpg" alt="Screen Shot 2018-08-08 at 3.20.02 PM">
             </div>
-        </section>
+        </aside>
+        <!-- </section> -->
 
 
         <!--Pricing-->
-        <section class="pricing">
+        <!-- <section class="pricing-dark">
             <div class="container">
                 <h5 class="pricing-tittle">Sign up today – 7 day money back guarantee</h5>
                 <ul class="pricing-list">
@@ -292,15 +330,13 @@
                    </ul>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--Footer-->
-        <section class="footer">
+        <!-- <section class="footer">
             <div class="container">
                 <div class="logotype">
-                    <svg width="1px" height="1px">
-                        <use href="#"></use>
-                    </svg>
+                    <img src="./images/logo-pia-black-no-tagline.jpg" alt="Logotype">
                 </div>
                 <div class="footer-group1">
                     <ul class="footer-group__list">
@@ -355,8 +391,6 @@
                                 from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.<br>© London Trust Media, 
                                 Inc. All Rights Reserved.</p>
                         </li>
-                        <!-- <li class="footer-group__list__item"></li>
-                        <li class="footer-group__list__item"></li> -->
                     </ul>
                 </div>
                 <div class="footer-social-container">
@@ -407,7 +441,7 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 </body>
 </html>
