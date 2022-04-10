@@ -1,96 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Test-project</title>
-    <link rel="stylesheet" href="./css/mail.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/mail.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <ul class="header__list">
-                <li class="header__list__item">
-                    <svg class="header__list__icon" width="24px" height="24px">
-                        <use href="./images/sprite.svg#icon-icon-red-alert"></use>
-                    </svg>
-                    <li class="header__list__item">
-                        <p class="header__list__item__text text-red">You are not protected</p>
-                    </li>
-                </li>
-                <li class="header__list__item">
-                    <p class="header__list__item__text text-gray">Your IP Address: 107.3.176.194</p>
-                </li>
-                <li class="header__list__item">
-                    <p class="header__list__item__text text-gray">Your ISP: Comcast Cable</p>
-                </li>
-                <li class="header__list__item">
-                    <a class="header__list__item__link" href="#">Learn More &#62;</a>
-                </li>
-                    
-                    <div class="header-container__close">
-                        <button type="button" class="header__close">
-                            <svg class="header__list__icon" width="14px" height="14px">
-                                <use href="./images/sprite.svg#icon-icon-dark-close"></use>
-                            </svg>
-        
-                        </button>
-                </div>
-            </ul>
-        </div>
+      <div class="container">
+        <ul class="header__list">
+          <li class="header__list__item header-item1">
+            <svg class="header__list__icon" width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-icon-red-alert"></use>
+            </svg>
+          </li>
+          <li class="header__list__item header-item2">
+            <p class="header__list__item__text text-orange">
+              You are not protected
+            </p>
+          </li>
+          <li class="header__list__item header-item3">
+            <p class="header__list__item__text text-gray">
+              Your IP Address: 107.3.176.194
+            </p>
+          </li>
+          <li class="header__list__item header-item4">
+            <p class="header__list__item__text text-gray">
+              Your ISP: Comcast Cable
+            </p>
+          </li>
+          <li class="header__list__item header-item5">
+            <a class="header__list__item__link" href="#">Learn More &#62;</a>
+          </li>
+          <!-- <li class="header-container__close> -->
+          <div class="header-container__close">
+            <button type="button" class="header__close">
+              <svg class="header__close__icon" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-icon-dark-close"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- </li> -->
+        </ul>
+      </div>
     </header>
     <!--Nav-->
     <nav class="nav">
-        <div class="container">
-            <a href="#">
-                <img class="logotype" src="./images/logo-pia-black-no-tagline.jpg" alt="Logotype">
-            </a> 
-            <ul class="nav-list">
-            <li class="nav-list__item">
-                <a class="nav-list__item__link" href="#">Why us
-                    <svg class="nav-svg" width="10px" height="5px">
-                        <use href="./images/sprite.svg#icon--copy-2"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="nav-list__item__link" href="#">Vpn apps</a>
-            </li>
-            <li>
-                <a class="nav-list__item__link" href="#">Support
-                    <svg class="nav-svg" width="10px" height="5px">
-                        <use href="./images/sprite.svg#icon--copy-2"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="nav-list__item__link nav-active-link" href="#">Resources
-                    <svg class="nav-svg" width="10px" height="5px">
-                        <use href="./images/sprite.svg#icon--copy-2"></use>
-                    </svg>
-                </a>
-            </li>
+      <div class="container">
+          <button type="button" class="mobile-menu-btn">
+            <svg width="24px" height="16px">
+              <use href="./images/sprite.svg#icon-combined-shape"></use>
+            </svg>
+          </button>
+        <a href="#">
+          <img
+            class="logotype"
+            src="./images/logo-pia-black-no-tagline.jpg"
+            alt="Logotype"
+          />
+        </a>
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__item__link" href="#"
+              >Why us
+              <svg class="nav-svg" width="10px" height="5px">
+                <use href="./images/sprite.svg#icon--copy-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="nav-list__item__link" href="#">Vpn apps</a>
+          </li>
+          <li>
+            <a class="nav-list__item__link" href="#"
+              >Support
+              <svg class="nav-svg" width="10px" height="5px">
+                <use href="./images/sprite.svg#icon--copy-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="nav-list__item__link nav-active-link" href="#"
+              >Resources
+              <svg class="nav-svg" width="10px" height="5px">
+                <use href="./images/sprite.svg#icon--copy-2"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
         <ul class="nav-list__btn">
-            <li class="nav-list__btn__item">
-                <button class="nav-btn1" type="button">Log in</button>
-            </li>
-            <li class="nav-list__btn__item">
-                <button class="nav-btn2" type="button">Get started</button>
-            </li>
+          <li class="nav-list__btn__item">
+            <button class="nav-btn1" type="button">Log in</button>
+          </li>
+          <li class="nav-list__btn__item">
+            <button class="nav-btn2" type="button">Get started</button>
+          </li>
         </ul>
-    </div>
-</nav>
+      </div>
+    </nav>
     <main>
-        <!--Feature-->
-        <section class="feature">
+      <!--Feature-->
+      <section class="feature">
             <div class="container">
-                <h1 hidden>Description of the site</h1>
-                 <div class="feature-container__img">
+                <div class="feature-container__img">
+                     <h1 hidden>Description of the site</h1>
                      <img src="./images/featured article/featured-article.jpg" alt="
                      Remote control and description">
                  </div>
+                 <!-- <div class="container"> -->
+                     <div class="feature-container-mobile__img">
+                         <h1 hidden>Description of the site</h1>
+                         <img src="./images/featured-article-mobile.jpg" alt="
+                         Remote control and description">
+                     </div>
                 
                 <div class="feature-container__tags">
                     <ul class="feature__list">
@@ -110,14 +134,23 @@
                 </div>
             </div>
         </section>
-        <!--Entries-->
-        <section class="entries">
+      <!--Entries-->
+      <section class="entries">
             <div class="container">
+                <article>
+                <form class="aside__form__mobile" action="#">
+                    <span class="aside__icon__wrapper">
+                        <input class="aside__input" type="search" placeholder="Search blog">
+                        <svg class="icon-search" width="18px" height="18px">
+                            <use href="./images/sprite.svg#icon-search1"></use>
+                        </svg>
+                    </span>
+                </form>
                 <h2 class="entries-tittle">Recent posts</h2>
                 <ul class="entries-list">
                     <li class="entries-list__item">
                         <div class="entries-list__image"> 
-                            <img src="./images/entries/bitmap.jpg" alt="">
+                            <img class="entries-list__image__mobile" src="./images/entries/bitmap.jpg" alt="">
                         </div>
                         <div class="entries-list__card">
                             <p class="entries-list__card__text">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
@@ -131,7 +164,7 @@
                     </li>
                     <li class="entries-list__item">
                         <div class="entries-list__image"> 
-                            <img src="./images/entries/bitmap-1.jpg" alt="">
+                            <img class="entries-list__image__mobile" src="./images/entries/bitmap-1.jpg" alt="">
                         </div>
                         <div class="entries-list__card">
                             <p class="entries-list__card__text">How to get cheaper flights using a VPN</p>
@@ -145,7 +178,7 @@
                     </li>
                     <li class="entries-list__item">
                         <div class="entries-list__image"> 
-                            <img src="./images/entries/bitmap-2.jpg" alt="">
+                            <img class="entries-list__image__mobile" src="./images/entries/bitmap-2.jpg" alt="">
                         </div>
                         <div class="entries-list__card">
                             <p class="entries-list__card__text">Net Neutrality was repealed, but the fight<br/> is far from over</p>
@@ -157,7 +190,7 @@
                             </svg>
                         </div>
                     </li>
-                    <li class="entries-list__item">
+                    <li class="entries-list__item mobile-display-none">
                         <div class="entries-list__image"> 
                             <img src="./images/entries/bitmap.jpg" alt="">
                         </div>
@@ -171,7 +204,7 @@
                             </svg>
                         </div>
                     </li>
-                    <li class="entries-list__item">
+                    <li class="entries-list__item mobile-display-none">
                         <div class="entries-list__image"> 
                             <img src="./images/entries/bitmap-1.jpg" alt="">
                         </div>
@@ -185,7 +218,7 @@
                             </svg>
                         </div>
                     </li>
-                    <li class="entries-list__item">
+                    <li class="entries-list__item mobile-display-none">
                         <div class="entries-list__image"> 
                             <img src="./images/entries/bitmap-2.jpg" alt="">
                         </div>
@@ -202,11 +235,12 @@
                 </ul>
                 <div class="button-wrapper">
                     <button type="button" class="entries-btn">older posts</button>
-                </div>
+                </article>
+                <!-- </div> -->
                 <aside class="aside-blog">
                     <div class="aside-wrapper">
                         <h3 hidden class="nav-blog__tittle">Side navigation</h3>
-                        <form class="aside__form" action="#">
+                        <form class="aside__form__desktop" action="#">
                             <span class="aside__icon__wrapper">
                                 <input class="aside__input" type="search" placeholder="Search blog">
                                 <svg class="icon-search" width="18px" height="18px">
@@ -248,16 +282,15 @@
                         </div>
                     </li>
                 </ul>
-                <img src="./images/nav-side/bitmap-nav-side1.jpg" alt="Big Brother is watching.">
+                <img src="./images/nav-side/bitmap-nav-side1.jpg" alt="Big Brother is watching." class="nav__mobile__img">
                 <p class="nav-blog__subtitle">Tag cloud</p>
                 <img src="./images/nav-side/screen-hot-nav-side.jpg" alt="Screen Shot 2018-08-08 at 3.20.02 PM">
             </aside>
         </div>
         </section>
 
-
-        <!-- Pricing -->
-        <section class="pricing-dark">
+      <!-- Pricing -->
+      <section class="pricing-dark">
             <div class="container">
                 <h5 class="pricing-tittle">Sign up today – 7 day money back guarantee</h5>
                 <ul class="pricing-list">
@@ -340,10 +373,9 @@
                 </div>
             </div>
         </section>
-
     </main>
-        <!--Footer-->
-          <footer class="footer"> 
+    <!--Footer-->
+    <!-- <footer class="footer"> 
               <div class="footer-logotype">
                   <a href="#">
                       <img src="./images/logo-pia-black-no-tagline.jpg" alt="Logotype">
@@ -378,10 +410,6 @@
                         </ul>
                     </ul>
                 </div>
-                <!-- <div class="footer-group3"> -->
-                    <!-- <ul class="footer-group__list"> -->
-                    <!-- </ul> -->
-                <!-- </div> -->
                 <div class="footer-group3">
                     <ul class="footer-group__list">
                         <p class="footer-group__subtitle">legal</p>
@@ -455,6 +483,6 @@
                     </div>
                 </div>
             </div>
-          </footer> 
-</body>
+          </footer>  -->
+  </body>
 </html>
