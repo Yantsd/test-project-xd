@@ -137,7 +137,7 @@
       <!--Entries-->
       <section class="entries">
             <div class="container">
-                <article>
+                <article class="article">
                 <form class="aside__form__mobile" action="#">
                     <span class="aside__icon__wrapper">
                         <input class="aside__input" type="search" placeholder="Search blog">
@@ -290,9 +290,10 @@
         </section>
 
       <!-- Pricing -->
-      <section class="pricing-dark">
+      <section class="pricing">
             <div class="container">
                 <h5 class="pricing-tittle">Sign up today – 7 day money back guarantee</h5>
+                <div class="pricing-container">
                 <ul class="pricing-list">
                         <li class="pricing-list__item">
                             <p class="pricing-list__item__text1">Monthly</p>
@@ -313,44 +314,56 @@
                         <button class="pricing-list__item__btn" type="button">sing up</button>
                     </li>
                 </ul>
+            </div>
                 <div class="ways-to-pay-conteiner">
                     <ul class="ways-to-pay__list">
                         <li class="ways-to-pay__list__item">
                             <p class="ways-to-pay__subtitle">Ways to pay:</p>
                         </li>
-                       <li class="ways-to-pay__list__item">
-                           <svg width="100px" hiegth="100px">
-                               <use href="./images/sprite.svg#icon-visa"></use>
+                       <li class="ways-to-pay__list__item break">
+                           <svg  class="svg-mobile ways-to-pay__size-svg1" width="100" hiegth="36">
+                               <use href="./images/sprite.svg#icon-visa-mobile"></use>
                            </svg>
+                           <svg class="svg-decktop" width="100px" hiegth="100px">
+                            <use href="./images/sprite.svg#icon-visa"></use>
+                        </svg>
                        </li>
                        <li class="ways-to-pay__list__item">
-                           <svg width="66px" hiegth="51px">
+                           <svg class="ways-to-pay__size-svg2" width="66" hiegth="51">
                                <use href="./images/sprite.svg#icon-mc_vrt_pos"></use>
                            </svg>
                        </li>
                        <li class="ways-to-pay__list__item">
-                           <svg width="54px" hiegth="54px">
+                           <svg class="ways-to-pay__size-svg3" width="54px" hiegth="54px">
                                <use href="./images/sprite.svg#icon-amex_logo"></use>
                            </svg>
                        </li>
-                       <li class="ways-to-pay__list__item">
-                           <svg width="100px" hiegth="100px">
+                       <li class="ways-to-pay__list__item break">
+                           <svg class="ways-to-pay__size-svg4" width="100px" hiegth="24px">
+                               <use class="svg-mobile" href="./images/sprite.svg#icon-pay_pal-mobile"></use>
+                            </svg>
+
+                           <svg class="svg-decktop" width="100px" hiegth="100px">
                                <use href="./images/sprite.svg#icon-pay_pal"></use>
                            </svg>
                        </li>
                        <li class="ways-to-pay__list__item">
-                           <svg width="78px" hiegth="24px">
+                           <svg class="ways-to-pay__size-svg5 width="78px" hiegth="24px">
                                <use href="./images/sprite.svg#icon-Bitcoin"></use>
                            </svg>
                        </li>
                        <li class="ways-to-pay__list__item">
-                           <svg width="74px" hiegth="18px">
+                           <svg class="ways-to-pay__size-svg6" width="74px" hiegth="18px">
                                <use href="./images/sprite.svg#icon-OK-Pay"></use>
                            </svg>
                        </li>
-                       <li class="class="ways-to-pay__list__item"> 
+                       <li class="ways-to-pay__list__item"> 
+                        <svg class="ways-to-pay__size-svg7" width="100px" hiegth="24px">
+                            <use class="svg-mobile" href="./images/sprite.svg#icon-amazon-Pay-mobile"></use>
+                         </svg>
+
                         <svg width="119px" hiegth="23px">
-                            <use href="./images/sprite.svg#icon-Amazon-Pay-logo"></use>
+                            <use class="svg-decktop" href="./images/sprite.svg#icon-Amazon-Pay-logo"></use>
                          </svg>
                        </li>
                    </ul>
@@ -364,11 +377,11 @@
                     </li>
                        <li class="ways-to-pay__list2__item">
                            <a class="ways-to-pay__list2__link" href="#">Redeem gift card
-                            <svg class="ways-to-pay__svg" width="10px" hiegth="15px">
-                                <use href="./images/sprite.svg#icon-shape"></use>
-                            </svg>
-                       </a>
-                    </li>
+                                <svg class="ways-to-pay__svg" width="10px" hiegth="15px">
+                                    <use href="./images/sprite.svg#icon-shape"></use>
+                                </svg>
+                            </a>
+                        </li>
                    </ul>
                 </div>
             </div>

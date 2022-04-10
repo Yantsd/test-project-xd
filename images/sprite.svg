@@ -114,5 +114,16 @@
 <symbol id="icon-combined-shape" viewBox="0 0 48 32">
 <path d="M2 32c-1.105 0-2-0.895-2-2s0.895-2 2-2v0h44c1.105 0 2 0.895 2 2s-0.895 2-2 2v0zM2 18c-1.105 0-2-0.895-2-2s0.895-2 2-2v0h44c1.105 0 2 0.895 2 2s-0.895 2-2 2v0zM2 4c-1.105 0-2-0.895-2-2s0.895-2 2-2v0h44c1.105 0 2 0.895 2 2s-0.895 2-2 2v0z"></path>
 </symbol>
+<symbol id="icon-amazon-Pay-mobile" viewBox="0 0 167 32">
+<path fill="#000" style="fill: var(--color1, #000)" d="M0 0h166.667v32h-166.667v-32z"></path>
+<path fill="#889099" style="fill: var(--color2, #889099)" d="M0 0h166.667v32h-166.667v-32z"></path>
+</symbol>
+<symbol id="icon-pay_pal-mobile" viewBox="0 0 133 32">
+<path fill="#889099" style="fill: var(--color2, #889099)" d="M0 0h133.333v32h-133.333v-32z"></path>
+</symbol>
+<symbol id="icon-visa-mobile" viewBox="0 0 89 32">
+<path fill="#000" style="fill: var(--color1, #000)" d="M0 0h88.889v32h-88.889v-32z"></path>
+<path fill="#889099" style="fill: var(--color2, #889099)" d="M0 0h88.889v32h-88.889v-32z"></path>
+</symbol>
 </defs>
 </svg>

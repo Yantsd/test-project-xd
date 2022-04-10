@@ -61,6 +61,7 @@ a {
 
     @media screen and (min-width: 1200px) {
       width: 1220px;
+      margin: 0 auto;
     }
   }
 }
@@ -359,6 +360,7 @@ a {
   }
 }
 /* ENTRIES */
+
 @media screen and (max-width: 1199px) {
   .mobile-display-none {
     display: none;
@@ -367,6 +369,9 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .aside {
+    margin-bottom: 69.4px;
   }
   .aside__form__desktop {
     display: none;
@@ -535,17 +540,20 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
+  .entries {
+    height: 1697px;
+  }
   .aside__form__mobile {
     display: none;
   }
-  .entries > .container {
+  .entries .container {
     width: 1200px;
   }
-  article {
+  .article {
     width: 780px;
     float: left;
   }
-  aside {
+  .aside-blog {
     width: 400px;
     float: right;
   }
@@ -610,7 +618,6 @@ a {
     width: 780px;
     display: flex;
     justify-content: center;
-    margin-bottom: 118px;
   }
   .entries-btn {
     border-radius: 22px;
@@ -643,15 +650,9 @@ a {
 }
 
 /* PRICING */
-
-/* .pricing-dark {
-  width: 1600px;
-  height: 800px;
-  margin-top: 118px;
-  margin: auto;
+.pricing {
   background-color: var(--pricing-backgroud);
 }
-
 .pricing-tittle {
   font-size: 48px;
   line-height: 1.333;
@@ -661,61 +662,45 @@ a {
   padding-bottom: 40px;
   color: var(--text-white-color);
 }
-.pricing-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .pricing-list__item {
-  width: 380px;
   height: 340px;
-  margin: 10px;
   border-radius: 4px;
   background-color: var(--text-white-color);
   text-align: center;
 }
-
 .pricing-list__item {
   transition: all 0.5s linear;
 }
 
 .pricing-list__item:hover {
-  transform: scale(1.1, 1.1);
   cursor: pointer;
-  outline: solid 4px var(--accent-color);
 }
-
 .pricing-list__item__text1 {
-  margin-top: 51px;
   font-size: 14px;
   line-height: 1.285;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--text-black-color);
 }
-
 .pricing-list__item__text1::after {
   display: block;
-  margin-left: 178px;
+  margin: auto;
   margin-top: 8px;
   width: 24px;
   height: 2px;
   background-color: var(--accent-color);
   content: "";
 }
-
 .pricing-list__item__text2 {
   font-size: 56px;
   line-height: 1.333;
   color: var(--text-black-color);
   font-weight: 300;
+  margin-bottom: 10px;
 }
-
 .pricing-list__item__text2::after {
   display: block;
-  margin-left: 100px;
-  margin-top: 10px;
+  margin: auto;
   width: 200px;
   height: 1px;
   background-color: var(--line-color);
@@ -728,7 +713,6 @@ a {
   margin-bottom: 31px;
   margin-top: 29px;
 }
-
 .pricing-list__item__text {
   font-size: 14px;
   line-height: 1.285;
@@ -736,14 +720,12 @@ a {
   margin-bottom: 26px;
   margin-top: 18px;
 }
-
 .red-price {
   color: var(--text-red-color);
   font-size: 14px;
   line-height: 1.571;
   font-weight: 400;
 }
-
 .pricing-list__item__btn {
   height: 40px;
   width: 205px;
@@ -751,62 +733,81 @@ a {
   cursor: pointer;
   background-color: var(--btn-fon-color);
   border-color: var(--accent-color);
+  color: var(--accent-color);
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.285;
   transition: color background-color 250ms linear;
 }
 
-.pricing-list__item__btn:hover,
-.pricing-list__item__btn:focus .nav-btn1:hover,
-.nav-btn1:focus {
-  background-color: var(--accent-color);
-  color: var(--btn-fon-color);
-}
-
-.ways-to-pay-conteiner {
-  height: 100px;
-}
-
-.ways-to-pay__list,
-.ways-to-pay__list2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ways-to-pay__list {
-  height: 100px;
-  margin-top: 41px;
-}
-.ways-to-pay__list__item {
-  margin-right: 32px;
-  text-decoration: uppercase;
-}
-.ways-to-pay__subtitle {
-  color: var(--text-white-color);
-  font-size: 18px;
-  line-height: 1.555;
-  font-weight: 300;
-}
-
-.ways-to-pay__list2__item {
-  height: 24px;
-  margin-top: 8px;
-  margin-right: 40px;
-  color: var(--accent-color);
-  font-size: 14px;
-  line-height: 1.285;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.ways-to-pay__svg {
-  width: 10px;
-  height: 15px;
-  margin-bottom: -3px;
-  margin-left: 13px;
-} */
+@media screen and (max-width: 1199px) {
+  .pricing {
+    height: 1700px;
+  }
+  .pricing-tittle {
+    font-size: 32px;
+    line-height: 1.375;
+    padding-top: 61px;
+  }
+  .pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-list {
+    margin-bottom: 38px;
+  }
+  .pricing-list {
+    width: 315px;
+  }
+  .pricing-list__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .pricing-list__item:hover {
+    outline: solid 4px var(--header-orange-color);
+  }
+  .pricing-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 51px 51px 40px 55px;
+  }
+  .pricing-list__item__btn:focus,
+  .nav-btn1:focus {
+    background-color: var(--header-orange-color);
+    color: var(--btn-fon-color);
+  }
+@media screen and (min-width: 1200px) {
+    .pricing .container {
+        width: 100%;
+        height: 800px;
+      }
+      .pricing-tittle {
+        font-size: 48px;
+        line-height: 1.333;
+      }
+      .pricing-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .pricing-list__item {
+        margin: 10px;
+    }
+      .pricing-list__item {
+        transition: all 0.5s linear;
+        padding: 51px 88px 40px 87px ;
+      }
+      .pricing-list__item:hover {
+        transform: scale(1.1, 1.1);
+        outline: solid 4px var(--accent-color);
+      }
+      .pricing-list__item__btn:hover,
+      .pricing-list__item__btn:focus .nav-btn1:hover,
+      .nav-btn1:focus {
+        background-color: var(--accent-color);
+        color: var(--btn-fon-color);
+      }
 
 /* FOOTER */
 /* .footer > .container {
